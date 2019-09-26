@@ -1,0 +1,72 @@
+body{
+    background-image: url("/assets/backg.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+}
+
+label{
+    color: darkturquoise;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background-color: darkgreen;
+    padding: 7px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.mainb{
+    border: dotted;
+    animation: myanimation 0.75s infinite;
+    background-color: rgba(0, 0, 0, 50%)
+}
+
+.mainb2{
+    border: dotted;
+    border-color: yellow;
+}
+
+button:hover{
+    color: black;
+    background-color: lightskyblue;
+}
+
+h1:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+@keyframes myanimation {
+    0% {border-color: gray;}
+    25% {border-color: goldenrod}
+    50% {border-color:yellow;}
+    75% {border-color: black;}
+  }
+
+  @media only screen and (max-width: 1100px) {
+    body {
+        background-image: url("/assets/backg2.jpg");
+        background-size: cover;
+    }
+  }
