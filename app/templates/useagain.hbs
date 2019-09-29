@@ -1,0 +1,18 @@
+<div class="row d-flex justify-content-center mt-3">
+    <div class="col-md-6 p-3 mainb text-center">
+        <label for="movfinder" class="animated fadeIn delay-1s">Search for a movie: </label>
+        <Input @id="movfinder" @type="text" @required="required" @value={{this.movFinder}} />
+        <button class="animated fadeInRight delay-1s" {{action 'submit' this.movFinder}}>GO</button>
+        <!--the submit function can be found in the controller named useagain.js-->
+    </div>
+</div>
+
+{{#each this.model as |movie| }}
+    <div>
+        <h2>{{movie.Title}}</h2>
+        <h5>{{movie.Year}}</h5>
+        {{movie.Poster}}
+    </div>
+{{/each}}
+
+{{outlet}}

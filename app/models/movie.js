@@ -6,7 +6,5 @@ export default DS.Model.extend({
     Year: DS.attr('string'),
     imdbID: DS.attr('string'),
     Type: DS.attr('string'),
-    Plot: DS.attr('string'),
-    Runtime: DS.attr('string'),
     Poster: DS.attr('string')
 });

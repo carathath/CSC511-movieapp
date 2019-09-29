@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.JSONAPISerializer.extend({
     primaryKey: 'imdbID',
-    normalizeResponse(store, primaryModelClass, id, requestType) {
+    normalizeResponse(store, primaryModelClass, payload, id, requestType) {
         payload.data = payload.Search;
         payload.data.forEach(item => {
             item.type = primaryModelClass.modelName;
@@ -11,16 +11,12 @@ export default DS.JSONAPISerializer.extend({
                 Year: item.Year,
                 imdbID: item.imdbID,
                 Type: item.Type,
-                Plot: item.Plot,
-                Runtime: item.Runtime,
                 Poster: item.Poster
             }
             delete item.Title;
             delete item.Year;
             delete item.imdbID;
             delete item.Type;
-            delete item.Plot;
-            delete item.Runtime;
             delete item.Poster;
         });
 

@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('search');
+  this.route('useagain');
 });
 
 export default Router;
