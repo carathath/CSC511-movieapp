@@ -1,14 +1,14 @@
 # Movie App Name
 
-Author: Insert Name Here
+Author: Luis Carazas
 
-This is a short project description providing details about what this application does.
+This application allows the user to search for a movie
 
 ## Time spent
 Describe the time you spent on the project.
- * Tutorials, research: x hours
- * Coding required stories: x hours
- * Optional and extras: x minutes
+ * Tutorials, research: 12 hours
+ * Coding required stories: 8 hours
+ * Optional and extras: 3 minutes
 
 ## User stories
 

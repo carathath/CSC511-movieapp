@@ -5,19 +5,27 @@ export default DS.JSONAPISerializer.extend({
   keyForAttribute(key) {
     return key;
   },
-  normalizeResponse(store, primaryModelClass, payload) {
+  normalize(store, primaryModelClass, payload) {
     payload.data = payload.Search;
     payload.data.forEach(item => {
       item.type = primaryModelClass.modelName;
       item.attributes = {
         Title: item.Title,
         Year: item.Year,
+        Rated: item.Rated,
+        Runtime: item.Runtime,
+        Director: item.Director,
+        Plot: item.Plot,
         imdbID: item.imdbID,
         Type: item.Type,
         Poster: item.Poster
       };
       delete item.Title;
       delete item.Year;
+      delete item.Rated;
+      delete item.Runtime;
+      delete item.Director;
+      delete item.Plot;
       delete item.Type;
       delete item.Poster;
     });

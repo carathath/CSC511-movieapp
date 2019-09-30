@@ -2,13 +2,13 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   queryParams: {
-    s: {
+    i: {
       refreshModel: true
     }
   },
   model(params) {
     return this.store.query('movie', {
-      s: params.s || 'peru'
+      i: params.i || 'peru'
     });
   }
 });

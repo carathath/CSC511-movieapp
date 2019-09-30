@@ -8,7 +8,7 @@ export default DS.JSONAPIAdapter.extend({
         return '';
     },
 
-    buildURL(modelName, snapshot, query = {}) {
+    buildURL(modelName, id, snapshot, requestType, query = {}) {
         query.apikey = ENV.OMDB_API_KEY;
         return this._super(...arguments);
     }

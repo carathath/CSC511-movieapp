@@ -47,6 +47,12 @@ button{
     border-color: yellow;
 }
 
+.output{
+    border-bottom-style: dashed;
+    padding-bottom: 7px;
+    border-color: white;
+}
+
 button:hover{
     color: black;
     background-color: lightskyblue;
