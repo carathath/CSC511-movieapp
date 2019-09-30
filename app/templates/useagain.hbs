@@ -1,7 +1,7 @@
 <p id="#top"></p>
 
 <div class="row d-flex justify-content-center mt-3">
-    <div class="col-md-6 p-3 mainb text-center">
+    <div class="col-md-5 p-3 mainb text-center">
         <label for="movfinder" class="animated fadeIn delay-1s">Search for a movie: </label>
         <Input @id="movfinder" @type="text" @required="required" @value={{this.movFinder}} />
         <button class="animated fadeInRight delay-1s" {{action "submit" movFinder}}>GO</button>
@@ -10,13 +10,13 @@
 </div>
 
 <div class="row d-flex justify-content-center mt-3">
-    <div class="col-md-6 p-3 mainb2 text-center">
+    <div class="col-md-5 p-3 mainb2 text-center">
     {{#each this.model as |movie| }}
         <div class="output">
             <h2>{{movie.Title}}</h2>
             <h5>{{movie.Year}}</h5>
             <LinkTo @route="more">
-            <img src={{movie.Poster}} alt="Movie poster">
+            <img src={{movie.Poster}} alt="Movie poster" class="animated fadeIn delay-1s">
             </LinkTo>
         </div>
     {{/each}}

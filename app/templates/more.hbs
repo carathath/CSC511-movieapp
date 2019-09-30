@@ -1,11 +1,11 @@
+{{action "display" this.model.imdbID}}
+
 <div class="row d-flex justify-content-center mt-3">
     <div class="col-md-6 p-3 mainb2 text-center">
-    {{#each this.model as |movie| }}
         <div class="output">
-            <h2>{{movie.Title}}</h2>
-            <h5>{{movie.Year}}</h5>
-            <img src={{movie.Poster}} alt="poster">
+            <h2>{{model.Title}}</h2>
+            <h5>{{model.Year}}</h5>
+            <img src={{model.Poster}} alt="Movie poster">
         </div>
-    {{/each}}
     </div>
 </div>

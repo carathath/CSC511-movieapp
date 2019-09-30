@@ -8,7 +8,7 @@ export default Route.extend({
   },
   model(params) {
     return this.store.query('movie', {
-      s: params.s || 'peru'
+      s: params.s || 'scary movie'
     });
   }
 });

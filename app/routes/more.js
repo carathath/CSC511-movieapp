@@ -7,8 +7,8 @@ export default Route.extend({
     }
   },
   model(params) {
-    return this.store.query('movie', {
-      i: params.i || 'peru'
+    return this.store.query('moremovie', {
+      i: params.i || 'tt3896198'
     });
   }
 });

@@ -9,6 +9,6 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('useagain');
   this.route('more');
-});
+}); 
 
 export default Router;
