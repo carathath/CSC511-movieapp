@@ -8,7 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('useagain');
-  this.route('more');
+  this.route('more', {path: 'more/:id'});
 }); 
 
 export default Router;

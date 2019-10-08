@@ -1,14 +1,9 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  queryParams: {
-    i: {
-      refreshModel: true
-    }
-  },
+
   model(params) {
-    return this.store.query('moremovie', {
-      i: params.i || 'tt3896198'
-    });
+    return this.store.queryRecord('moremovie', { i: params.id });
   }
+
 });

@@ -15,7 +15,7 @@
         <div class="output">
             <h2>{{movie.Title}}</h2>
             <h5>{{movie.Year}}</h5>
-            <LinkTo @route="more">
+            <LinkTo @route="more" @model={{movie.id}}>
             <img src={{movie.Poster}} alt="Movie poster" class="animated fadeIn delay-1s">
             </LinkTo>
         </div>
